@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cv_videowriter"
+version = "0.1.0"
+description = "Wrapper around OpenCV VideoWriter with some extra features"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Ibai Gorordo"}
+]
+dependencies = [
+    "opencv-python",
+]
+
+[tool.setuptools.packages.find]
+include = ["cv_videowriter"]
+
+[project.urls]
+Homepage = "https://github.com/ibaiGorordo/cv_videowriter"
